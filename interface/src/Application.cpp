@@ -1083,6 +1083,12 @@ void Application::paintGL() {
     if (_aboutToQuit) {
         return;
     }
+    
+    // Don't render anything if this is checked
+    if (Menu::getInstance()->isOptionChecked(MenuOption::NoRender)){
+	return;
+    }
+	
     _frameCount++;
 
     // update fps moving average
