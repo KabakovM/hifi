@@ -289,6 +289,7 @@ namespace MenuOption {
     const QString VisibleToFriends = "Friends";
     const QString VisibleToNoOne = "No one";
     const QString WorldAxes = "World Axes";
+    const QString NoRender = "Halt rendering of the world";
 }
 
 #endif // hifi_Menu_h
