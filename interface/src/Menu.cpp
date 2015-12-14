@@ -306,7 +306,9 @@ Menu::Menu() {
         true);
     addCheckableActionToQMenuAndActionHash(renderOptionsMenu, MenuOption::DebugAmbientOcclusion);
     addCheckableActionToQMenuAndActionHash(renderOptionsMenu, MenuOption::Antialiasing);
-
+	
+	addCheckableActionToQMenuAndActionHash(renderOptionsMenu, MenuOption::NoRender);
+	
     MenuWrapper* ambientLightMenu = renderOptionsMenu->addMenu(MenuOption::RenderAmbientLight);
     QActionGroup* ambientLightGroup = new QActionGroup(ambientLightMenu);
     ambientLightGroup->setExclusive(true);
